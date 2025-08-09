@@ -6,7 +6,7 @@ import threading
 import queue
 
 # 默认配置文件路径
-BASE_DIR = "/root/diffusion-pipe"  # diffusion-pipe 的根目录
+BASE_DIR = "/workspace/diffusion-pipe"  # diffusion-pipe 的根目录
 TRAIN_SCRIPT = "/root/diffusion-pipe/train.py"  # 训练脚本路径
 DATASET_CONFIG = "/root/diffusion-pipe/examples/dataset.toml"  # 数据集配置文件
 I2V_A14B_HIGH_TRAIN_CONFIG = "/root/diffusion-pipe/examples/wan2.2_i2v_a14b-high.toml"  # i2v (A14B) 高噪训练配置文件
