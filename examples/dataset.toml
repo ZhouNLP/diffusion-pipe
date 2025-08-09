@@ -1,4 +1,4 @@
-resolutions = [[720, 1280]]
+resolutions = [[1280, 704]]
 enable_ar_bucket = true
 min_ar = 0.5
 max_ar = 2

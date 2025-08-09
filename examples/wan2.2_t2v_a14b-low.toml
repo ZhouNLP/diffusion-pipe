@@ -1,12 +1,12 @@
 output_dir = "/workspace/output"
 dataset = "/workspace/diffusion-pipe/examples/dataset.toml"
 epochs = 40
-micro_batch_size_per_gpu = 10
+micro_batch_size_per_gpu = 9
 pipeline_stages = 1
-gradient_accumulation_steps = 3
-gradient_clipping = 0
-warmup_steps = 0
-blocks_to_swap = 10
+gradient_accumulation_steps = 1
+gradient_clipping = 1
+warmup_steps = 12
+blocks_to_swap = 0
 eval_every_n_epochs = 1
 eval_before_first_step = true
 eval_micro_batch_size_per_gpu = 1
@@ -15,7 +15,7 @@ save_every_n_epochs = 1
 checkpoint_every_n_minutes = 5
 activation_checkpointing = true
 save_dtype = "bfloat16"
-caching_batch_size = 10
+caching_batch_size = 9
 video_clip_mode = "single_beginning"
 partition_method = "parameters"
 disable_block_swap_for_eval = false
@@ -34,13 +34,13 @@ transformer_dtype = "float8"
 
 [adapter]
 type = "lora"
-rank = 32
+rank = 8
 dtype = "bfloat16"
 
 [optimizer]
 type = "adamw_optimi"
-lr = 0.0005
+lr = 0.00002
 betas = [ 0.9, 0.99,]
-weight_decay = 0.0001
+weight_decay = 0.01
 eps = 1e-8
 gradient_release = false
