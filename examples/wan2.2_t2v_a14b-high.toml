@@ -26,10 +26,10 @@ type = "wan"
 ckpt_path = "/workspace"
 dtype = "bfloat16"
 timestep_sample_method = "logit_normal"
-min_t = 0
-max_t = 0.875
+min_t = 0.875
+max_t = 1
 llm_path = "/workspace/models_t5_umt5-xxl-enc-bf16.pth"
-transformer_path = "/workspace/low_noise_model"
+transformer_path = "/workspace/high_noise_model"
 transformer_dtype = "float8"
 
 [adapter]
@@ -39,7 +39,7 @@ dtype = "bfloat16"
 
 [optimizer]
 type = "adamw_optimi"
-lr = 0.00008
+lr = 0.00002
 betas = [ 0.9, 0.99,]
 weight_decay = 0.01
 eps = 1e-8

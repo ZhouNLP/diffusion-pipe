@@ -1,10 +1,10 @@
-resolutions = [[1280, 704]]
+resolutions = [720]
 enable_ar_bucket = true
 min_ar = 0.5
 max_ar = 2
 num_ar_buckets = 1
-frame_buckets = [ 1,]
+frame_buckets = [1]
 [[directory]]
-path = "/workspace/lora_c1"
-num_repeats = 3
+path = "/workspace/lora_c0_0810"
+num_repeats = 10
 
